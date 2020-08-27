@@ -105,10 +105,15 @@ function calculateShortcuts(sc) {
     switch (sc) {
         case 0:
             currentDisplay = 1 / currentDisplay;
+            break;
         case 1:
             currentDisplay = currentDisplay * currentDisplay;
+            break;
         case 2:
             currentDisplay = Math.pow(currentDisplay, 0.5);
+            break;
+        default:
+            break;
     }
     document.querySelector(".output").children[0].innerHTML = currentDisplay;
 }

@@ -106,7 +106,7 @@ function calculateShortcuts(sc) {
         case 0:
             currentDisplay = 1 / currentDisplay;
         case 1:
-            currentDisplay = Math.pow(currentDisplay, 2);
+            currentDisplay = currentDisplay * currentDisplay;
         case 2:
             currentDisplay = Math.pow(currentDisplay, 0.5);
     }
